@@ -1,42 +1,23 @@
-# Nuxt 3 Minimal Starter
+![](https://img.shields.io/github/last-commit/thoanny/lebusmagique-site?style=for-the-badge)
+![](https://img.shields.io/github/issues/thoanny/lebusmagique-site?style=for-the-badge)
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+# 🚍 Le Bus Magique (site)
 
-## Setup
+Front-end du Bus Magique.
 
-Make sure to install the dependencies:
+## Auteur
 
-```bash
-# yarn
-yarn install
+- [@thoanny](https://github.com/thoanny)
 
-# npm
-npm install
+## Contribuer
 
-# pnpm
-pnpm install
-```
+Toute aide est bienvenue ! 
 
-## Development Server
+Si vous souhaitez partiper au développement du site du Bus Magique, contactez Thoanny. 
 
-Start the development server on http://localhost:3000
+Si vous rencontrez des bugs, des erreurs ou si vous souhaitez partager des idées d'améliorations, de fonctionnalités, vous avez la possibilité d'[ouvrir un ticket](https://github.com/thoanny/lebusmagique-site/issues) (requiert un compte Github).
+## Développement
 
 ```bash
-npm run dev
+  npm run dev
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
