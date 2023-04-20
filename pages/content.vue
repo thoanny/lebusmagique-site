@@ -26,6 +26,12 @@ if (data) {
 </script>
 
 <template>
+    <!-- TODO : SEO -->
+
+    <Head>
+        <Title>{{ content.title }}</Title>
+    </Head>
+
     <div v-if="content">
         <div v-if="content.featuredImage">
             <img :src="content.featuredImage.node.sourceUrl" :srcset="content.featuredImage.node.srcSet" alt=""
