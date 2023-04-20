@@ -1,0 +1,3 @@
+<template>
+    CARTE INTERACTIVE
+</template>

@@ -1,0 +1,33 @@
+query Category($id: ID = "", $after: String = "", $limit: Int = 10) {
+  category(id: $id, idType: SLUG) {
+    id
+    name
+    posts(after: $after, first: $limit) {
+      nodes {
+        id
+        title
+        excerpt
+        date
+        uri
+        featuredImage {
+          node {
+            sourceUrl
+            srcSet
+          }
+        }
+        categories {
+          nodes {
+            id
+            name
+            slug
+          }
+        }
+        commentCount
+      }
+      pageInfo {
+        endCursor
+        hasNextPage
+      }
+    }
+  }
+}

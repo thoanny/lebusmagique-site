@@ -1,0 +1,15 @@
+query Menu {
+  menu(id: "primary", idType: LOCATION) {
+    id
+    menuItems(first: 9999) {
+      nodes {
+        id
+        parentId
+        label
+        path
+        target
+        cssClasses
+      }
+    }
+  }
+}

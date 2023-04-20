@@ -1,0 +1,40 @@
+query Content($uri: String = "") {
+  postBy(uri: $uri) {
+    id
+    title
+    content
+    date
+    featuredImage {
+      node {
+        sourceUrl
+        srcSet
+      }
+    }
+    categories {
+      nodes {
+        id
+        name
+        slug
+      }
+    }
+    tags {
+      nodes {
+        id
+        name
+        slug
+      }
+    }
+  }
+  pageBy(uri: $uri) {
+    id
+    title
+    content
+    date
+    featuredImage {
+      node {
+        sourceUrl
+        srcSet
+      }
+    }
+  }
+}
