@@ -37,7 +37,7 @@ if (data) {
             <img :src="content.featuredImage.node.sourceUrl" :srcset="content.featuredImage.node.srcSet" alt=""
                 class="mb-6 rounded max-h-80 w-full object-cover">
         </div>
-        <h1 class="text-6xl font-bold mb-6">{{ content.title }}</h1>
+        <h1 class="text-5xl font-bold mb-6">{{ content.title }}</h1>
         <div class="flex flex-wrap gap-4 opacity-75 text-sm mb-6">
             <div class="flex gap-2 items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"

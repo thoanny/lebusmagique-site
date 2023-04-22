@@ -13,7 +13,21 @@ module.exports = {
   },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["dark"],
+    themes: [
+      {
+        lebusmagique: {
+          "primary": "#446197",
+          "secondary": "#3B82F6",
+          "accent": "#09BC8A",
+          "neutral": "#191D24",
+          "base-100": "#2b3d5f",
+          "info": "#3498db",
+          "success": "#2ecc71",
+          "warning": "#f1c40f",
+          "error": "#e74c3c",
+        },
+      }
+    ],
   },
 }
 

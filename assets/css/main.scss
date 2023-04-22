@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    @apply bg-slate-800 text-slate-100 pt-20;
+    @apply bg-base-300 text-gray-100 pt-20;
 
     @screen 2xl {
         @apply pt-0;
@@ -15,7 +15,7 @@ body {
 /* Firefox */
 * {
     scrollbar-width: auto;
-    scrollbar-color: rgb(51 65 85) rgb(15 23 42);
+    scrollbar-color: #23314D #0E131E;
 }
 
 /* Chrome, Edge, and Safari */
@@ -24,54 +24,61 @@ body {
 }
 
 *::-webkit-scrollbar-track {
-    background: rgb(15 23 42);
+    background: #0E131E;
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: rgb(51 65 85);
+    background-color: #23314D;
     border-radius: 10px;
-    border: 3px solid rgb(15 23 42);
+    border: 3px solid #0E131E;
 }
 
 
 #menu {
     @apply text-sm font-semibold;
-}
 
-#menu>ul {
-    @apply flex flex-col gap-1;
-}
+    &>ul {
+        @apply flex flex-col gap-1;
+    }
 
-#menu li>a,
-#menu li>span {
-    @apply flex w-full py-2 px-3 cursor-pointer whitespace-nowrap items-center justify-between bg-slate-700 rounded gap-2;
-}
+    li {
 
-#menu li>a {
-    @apply block truncate;
-}
+        &>a,
+        &>span {
+            @apply flex w-full py-2 px-3 cursor-pointer whitespace-nowrap items-center justify-between bg-primary text-primary-content rounded gap-2;
+        }
 
-#menu ul ul li>a,
-#menu ul ul li>span {
-    @apply bg-slate-600;
-}
+        &>a {
+            @apply block truncate;
+        }
+    }
 
-#menu ul ul ul li>a,
-#menu ul ul ul li>span {
-    @apply bg-slate-500;
-}
+    ul ul li>a,
+    ul ul li>span {
+        @apply bg-base-100;
+    }
 
-#menu ul ul ul ul li>a,
-#menu ul ul ul ul li>span {
-    @apply bg-slate-400;
-}
+    ul ul ul li>a,
+    ul ul ul li>span {
+        @apply bg-base-200;
+    }
 
-#menu ul ul {
-    @apply hidden;
-}
+    ul ul ul ul li>a,
+    ul ul ul ul li>span {
+        @apply bg-base-300;
+    }
 
-#menu li.active>ul {
-    @apply flex flex-col gap-1 mt-1;
+    ul ul {
+        @apply hidden;
+    }
+
+    li.active>ul {
+        @apply flex flex-col gap-1 mt-1;
+    }
+
+    .router-link-active {
+        @apply text-white;
+    }
 }
 
 #post {
@@ -99,28 +106,30 @@ body {
     }
 
     h1 {
-        @apply text-6xl;
-    }
-
-    h2 {
         @apply text-5xl;
     }
 
-    h3 {
+    h2 {
         @apply text-4xl;
     }
 
-    h4 {
+    h3 {
         @apply text-3xl;
     }
 
-    h5 {
+    h4 {
         @apply text-2xl;
     }
 
-    h6 {
+    h5 {
         @apply text-xl;
     }
+
+    h6 {
+        @apply text-lg;
+    }
+
+    ul {}
 
     .wp-block-image {
         img {
